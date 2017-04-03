@@ -38,7 +38,7 @@ alphas=('-alpha 0.025' '-alpha 0.1')
 windows=('-window 5' '-window 20')
 negatives=('-negative 12' '-negative 50')
 models=('-cbow 1 -sample 1e-5' '-cbow 1 -sample 1e-4' '-cbow 1 -sample 1e-3' '-cbow 0 -sample 1e-3' '-cbow 0 -sample 1e-2' '-cbow 0 -sample 1e-1')
-default_parameters=('-size 150 -alpha 0.05 -window 10 -negative 25 -iter 25 -threads 20')
+default_parameters=('-size 150 -alpha 0.05 -window 10 -negative 25 -iter 25 -threads 4')
 default_models=('-cbow 0 -sample 1e-2' '-cbow 1 -sample 1e-4')
 mkdir time_w2v
 time_fold="time_w2v/"
