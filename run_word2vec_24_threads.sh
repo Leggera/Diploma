@@ -10,7 +10,7 @@ function normalize_text {
 }
 if [ ! -d ./data ]
 then
-    wget http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+    export http_proxy=http://proxy.miet.ru:3128 && wget --proxy-user=cvlab --proxy-password=cvlab http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
     tar -xvf aclImdb_v1.tar.gz
 
     for j in train/pos train/neg test/pos test/neg train/unsup; do
